@@ -1,0 +1,48 @@
+html, body {
+  box-sizing: border-box;
+  font: menu;
+}
+
+$button-color: #00adef;
+$button-text-color: #FFF;
+
+button {
+  background-color: $button-color;
+  border: 1px solid darken($button-color, 10);
+  color: $button-text-color;
+  padding: 0.5em;
+  &:hover, &:focus {
+    background-color: lighten($button-color, 10);
+  }
+  &:active {
+    background-color: lighten($button-color, 20);
+  }
+}
+
+.Application {
+  max-width: 600px;
+  margin: auto;
+}
+
+.UserInfo {
+  display: flex;
+  border: 1px solid #CCC;
+  padding: 0.5em;
+}
+
+.UserInfo--photograph {
+  max-width: 5em;
+  margin-right: 1em;
+  img {
+    width: 100%;
+  }
+}
+
+.UserInfo--displayName {
+  font-weight: 700;
+}
+
+.UserInfo--signOut {
+  @extend button;
+  margin-top: 5px;
+}
