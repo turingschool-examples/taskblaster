@@ -1,4 +1,4 @@
-# React Time Starter Kit
+# Taskblastr
 
 To install the dependencies:
 
